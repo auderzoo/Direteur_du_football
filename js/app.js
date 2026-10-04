@@ -300,7 +300,8 @@ function fmtMoneyRaw(v, cur) {
 // ---------------------------------------------------------------
 function divisionLabel(club) {
   const names = LEAGUE_NAMES[club.countryKey];
-  return (names && names["d" + club.division]) || (club.division === 1 ? "Élite" : "Nationale");
+  const base = (names && names["d" + club.division]) || (club.division === 1 ? "Élite" : "Nationale");
+  return club.group ? `${base} (Gr. ${club.group})` : base;
 }
 function divisionCount(club) {
   return DIVISION_COUNT[club.countryKey] || 2;
@@ -358,9 +359,11 @@ function renderDashboard() {
       <nav class="folder-tabs">
         ${tabButton("overview", "Vue d'ensemble")}
         ${tabButton("squad", "Effectif")}
-        ${tabButton("market", "Marché des transferts")}
+        ${tabButton("market", "Recrutement")}
+        ${tabButton("scouting", "Scouting")}
+        ${tabButton("staff", "Staff")}
         ${tabButton("calendar", "Calendrier")}
-        ${tabButton("cups", "Coupes")}
+        ${tabButton("cups", "Compétitions")}
         ${tabButton("club", "Club")}
         ${tabButton("inbox", "Boîte de réception" + (unreadCount() ? ` (${unreadCount()})` : ""))}
         ${tabButton("finance", "Finances")}
@@ -379,6 +382,8 @@ function renderDashboard() {
   if (ui.tab === "overview") content.innerHTML = renderOverview();
   if (ui.tab === "squad") content.innerHTML = renderSquad();
   if (ui.tab === "market") content.innerHTML = renderMarket();
+  if (ui.tab === "scouting") content.innerHTML = renderScoutingTab();
+  if (ui.tab === "staff") content.innerHTML = renderStaffTab();
   if (ui.tab === "calendar") content.innerHTML = renderCalendar();
   if (ui.tab === "cups") content.innerHTML = renderCups();
   if (ui.tab === "club") content.innerHTML = renderClubTab();
@@ -403,38 +408,51 @@ function maybeShowMatchModal() {
     const won = r.isHome ? r.homeGoals > r.awayGoals : r.awayGoals > r.homeGoals;
     const lost = r.isHome ? r.homeGoals < r.awayGoals : r.awayGoals < r.homeGoals;
     const resultClass = won ? "result-good" : lost ? "result-bad" : "result-mid";
-    const scorersTxt = [...(r.homeScorers || []), ...(r.awayScorers || [])];
+    const allGoals = [...(r.homeScorers || []), ...(r.awayScorers || [])].sort((a, b) => a.minute - b.minute);
     const cardsTxt = [...(r.homeCards || []), ...(r.awayCards || [])]
-      .map(c => `${c.name} ${c.type === "red" ? `🟥${c.minute ? ` (${c.minute}')` : ""}` : c.type === "suspension" ? "🟨🟨 (suspendu)" : "🟨"}`);
+      .map(c => `${c.name} ${c.type === "red" ? `🟥${c.minute ? ` (${c.minute}')` : ""}` : c.type === "suspension" ? "🟨🟨 (suspendu)" : `🟨${c.minute ? ` (${c.minute}')` : ""}`}`);
+
+    function ratingClass(v) { return v >= 7.3 ? "result-good" : v < 5.8 ? "result-bad" : ""; }
+    function lineupColumn(teamName, lineup, subs, isHome) {
+      const subbedOff = new Set((subs || []).map(s => s.outId));
+      return `
+        <p class="hint" style="margin:0 0 6px;"><strong>${teamName}</strong></p>
+        <div class="matchsheet-list">
+          ${(lineup || []).map(pl => {
+            const sub = (subs || []).find(s => s.outId === pl.id);
+            return `<div class="matchsheet-row">
+              <span class="ms-pos">${pl.position}</span><span class="ms-name">${pl.name}</span>
+              <span class="ms-rating ${ratingClass(pl.rating)}">${pl.rating != null ? pl.rating.toFixed(1) : "—"}</span>
+              ${sub ? `<span class="ms-sub-note">⇄ ${sub.minute}' ${sub.inName}</span>` : ""}
+            </div>`;
+          }).join("")}
+          ${(subs || []).map(s => `<div class="matchsheet-row matchsheet-row-in">
+              <span class="ms-pos">${s.position}</span><span class="ms-name">↳ ${s.inName}</span>
+              <span class="ms-rating ${ratingClass((isHome ? r.homeBench : r.awayBench).find(b => b.id === s.inId) ? (isHome ? r.homeBench : r.awayBench).find(b => b.id === s.inId).rating : null)}">${(() => { const b = (isHome ? r.homeBench : r.awayBench).find(bb => bb.id === s.inId); return b && b.rating != null ? b.rating.toFixed(1) : "—"; })()}</span>
+              <span class="ms-sub-note">entré à la ${s.minute}'</span>
+            </div>`).join("")}
+        </div>`;
+    }
+
     modal.innerHTML = `
       <div class="modal-backdrop">
-        <div class="modal dossier score-modal">
+        <div class="modal dossier score-modal" style="max-width:620px;">
           <h3>Résultat du match</h3>
           <div class="score-line">
             <span>${r.homeName}</span>
             <span class="score-num">${r.homeGoals} - ${r.awayGoals}</span>
             <span>${r.awayName}</span>
           </div>
-          ${scorersTxt.length ? `<p class="hint">Buteurs : ${scorersTxt.join(", ")}</p>` : ""}
+          ${allGoals.length ? `<p class="hint">Buts : ${allGoals.map(g => `${g.name} ${g.minute}'${g.assistName ? ` (passe : ${g.assistName})` : ""}`).join(" · ")}</p>` : ""}
           ${cardsTxt.length ? `<p class="hint">Cartons : ${cardsTxt.join(", ")}</p>` : ""}
           ${r.motm ? `<p class="hint">⭐ Homme du match : <strong>${r.motm}</strong></p>` : ""}
           <p class="${resultClass}">${won ? "Victoire !" : lost ? "Défaite." : "Match nul."}</p>
-          <details style="text-align:left;margin-bottom:14px;">
-            <summary style="cursor:pointer;color:var(--brass-dark);font-weight:600;">Feuille de match</summary>
-            <div class="calendar-columns" style="margin-top:10px;">
-              <div>
-                <p class="hint"><strong>${r.homeName}</strong> — titulaires</p>
-                ${(r.homeLineup || []).map(pl => `<div class="log-row">${pl.position} — ${pl.name}</div>`).join("")}
-                ${(r.homeSubs || []).length ? `<p class="hint" style="margin-top:8px;">Remplacements</p>${r.homeSubs.map(s => `<div class="log-row">${s.minute}' : ${s.outName} ➜ ${s.inName}</div>`).join("")}` : ""}
-              </div>
-              <div>
-                <p class="hint"><strong>${r.awayName}</strong> — titulaires</p>
-                ${(r.awayLineup || []).map(pl => `<div class="log-row">${pl.position} — ${pl.name}</div>`).join("")}
-                ${(r.awaySubs || []).length ? `<p class="hint" style="margin-top:8px;">Remplacements</p>${r.awaySubs.map(s => `<div class="log-row">${s.minute}' : ${s.outName} ➜ ${s.inName}</div>`).join("")}` : ""}
-              </div>
-            </div>
-          </details>
-          <button class="btn btn-primary" id="close-match-modal">Continuer</button>
+          <h4 class="panel-subtitle" style="margin:14px 0 8px;font-size:14px;">Feuille de match</h4>
+          <div class="matchsheet-columns">
+            ${lineupColumn(r.homeName, r.homeLineup, r.homeSubs, true)}
+            ${lineupColumn(r.awayName, r.awayLineup, r.awaySubs, false)}
+          </div>
+          <button class="btn btn-primary" id="close-match-modal" style="margin-top:14px;">Continuer</button>
         </div>
       </div>
     `;
@@ -503,7 +521,7 @@ function reputationSparkline(history) {
 function tabButton(key, label) {
   const icons = {
     overview: "📊", squad: "👥", market: "💱", calendar: "📅",
-    cups: "🏆", club: "🏟️", inbox: "📥", finance: "💰"
+    cups: "🏆", club: "🏟️", inbox: "📥", finance: "💰", scouting: "🔭", staff: "🧑‍🏫"
   };
   return `<button class="tab-btn ${ui.tab === key ? "active" : ""}" data-tab="${key}"><span class="tab-icon">${icons[key] || "•"}</span>${label}</button>`;
 }
@@ -662,72 +680,10 @@ function renderSquad() {
 }
 function clampPct(v) { return Math.max(0, Math.min(100, v)); }
 
-function renderMarket() {
-  const club = userClub();
-  const others = allClubs().filter(c => c.id !== club.id);
-  let players = [];
-  others.forEach(c => c.players.forEach(p => players.push(p)));
-
-  const f = ui.marketFilter;
-  const nameQuery = (f.q || "").toLowerCase();
-  players = players.filter(p => {
-    if (f.pos && p.position !== f.pos) return false;
-    if (nameQuery && !(`${p.firstName} ${p.lastName}`.toLowerCase().includes(nameQuery))) return false;
-    return true;
-  });
-  players.sort((a, b) => b.overall - a.overall);
-  players = players.slice(0, 60);
-
-  const win = currentWindow();
-
-  return `
-    <h2 class="panel-title">Marché des transferts</h2>
-    ${!win ? `<p class="hint">Le mercato est fermé. Vous pouvez consulter le marché mais aucune offre ne peut être conclue.</p>` : ""}
-    <div class="market-filters">
-      <input type="text" id="market-q" placeholder="Rechercher un joueur…" value="${f.q || ""}" />
-      <select id="market-pos">
-        <option value="">Tous postes</option>
-        <option value="GB">Gardien</option>
-        <option value="DEF">Défenseur</option>
-        <option value="MIL">Milieu</option>
-        <option value="ATT">Attaquant</option>
-      </select>
-    </div>
-    <table class="squad-table">
-      <thead><tr><th>Joueur</th><th>Club</th><th>Poste</th><th>Âge</th><th>Global</th><th>Valeur</th><th>Clause</th><th></th></tr></thead>
-      <tbody>
-        ${players.map(p => {
-          const c = getClub(p.clubId);
-          const isOnLoan = !!p.onLoan;
-          return `
-          <tr>
-            <td><button class="link-danger" style="color:var(--brass-dark);margin:0;" data-playercard="${p.id}">${p.firstName} ${p.lastName}</button></td>
-            <td>${c ? c.name : "?"}${isOnLoan ? " (prêté)" : ""}</td>
-            <td>${p.position}</td>
-            <td>${p.age}</td>
-            <td>${p.overall}</td>
-            <td>${fmtMoney(p.value)}</td>
-            <td>${p.releaseClause ? fmtMoney(p.releaseClause) : "—"}</td>
-            <td>
-              <button class="btn btn-small btn-ghost" data-scout="${p.id}">Scouter</button>
-              <button class="btn btn-small btn-primary" data-negotiate="${p.id}" ${win ? "" : "disabled"}>Négocier</button>
-              ${!isOnLoan ? `<button class="btn btn-small btn-ghost" data-loanin="${p.id}" ${win ? "" : "disabled"}>Emprunter</button>` : ""}
-            </td>
-          </tr>
-        `;
-        }).join("")}
-      </tbody>
-    </table>
-    <div id="negotiation-modal"></div>
-    <div id="scout-modal"></div>
-    <div id="loan-modal"></div>
-  `;
-}
-
 function renderCalendar() {
   const club = userClub();
   const country = state.countries[club.countryKey];
-  const leagueKey = "d" + club.division;
+  const leagueKey = clubLeagueKey(club);
   const league = country.leagues[leagueKey];
   const standings = [...league.clubs].sort((a, b) => b.points - a.points || (b.gf - b.ga) - (a.gf - a.ga));
 
@@ -795,7 +751,7 @@ function renderCalendar() {
             ${Object.values(state.countries).map(c => `<option value="${c.key}" ${c.key === ui.standingsCountry ? "selected" : ""}>${c.label}</option>`).join("")}
           </select>
           <select id="standings-div">
-            ${Object.keys(viewedCountry.leagues).sort((a, b) => viewedCountry.leagues[a].tier - viewedCountry.leagues[b].tier).map(dk => `<option value="${dk}" ${dk === ui.standingsDiv ? "selected" : ""}>${viewedCountry.leagues[dk].name}</option>`).join("")}
+            ${Object.keys(viewedCountry.leagues).sort((a, b) => viewedCountry.leagues[a].tier - viewedCountry.leagues[b].tier || a.localeCompare(b)).map(dk => `<option value="${dk}" ${dk === ui.standingsDiv ? "selected" : ""}>${viewedCountry.leagues[dk].name}</option>`).join("")}
           </select>
         </div>
         <table class="squad-table standings">
@@ -830,38 +786,73 @@ function renderCalendar() {
 
 function renderCups() {
   const club = userClub();
+  const country = state.countries[club.countryKey];
+  const leagueKey = clubLeagueKey(club);
+  const league = country.leagues[leagueKey];
+  const standings = getLeagueStandings(club.countryKey, leagueKey);
+  const rank = standings.findIndex(c => c.id === club.id) + 1;
   const nationalCup = state.cups.national[club.countryKey];
   const continentalCup = state.cups.continental;
 
-  function renderCupBlock(cup) {
-    if (!cup) return `<p class="hint">Pas assez de pays sélectionnés pour cette compétition.</p>`;
-    if (cup.champion) {
-      const champ = getClub(cup.champion);
-      return `<p class="result-good">Vainqueur : <strong>${champ ? champ.name : "?"}</strong></p>`;
+  function cupStatusCard(label, cup) {
+    const st = clubCupStatus(cup, club.id);
+    if (!cup) return `<div class="hero-card"><div class="hero-card-title">${label}</div><p class="hint" style="margin:0;">Compétition non disputée cette saison (pas assez de pays sélectionnés).</p></div>`;
+    if (!st) return `<div class="hero-card"><div class="hero-card-title">${label}</div><p class="hint" style="margin:0;">${club.name} n'est pas engagé cette saison.</p></div>`;
+    if (st.state === "champion") return `<div class="hero-card" style="border-left-color:var(--brass);"><div class="hero-card-title">${label}</div><div class="hero-card-main">🏆 Vainqueur !</div></div>`;
+    if (st.state === "eliminated") {
+      const home = getClub(st.match.home), away = getClub(st.match.away);
+      return `<div class="hero-card"><div class="hero-card-title">${label}</div><div class="hero-card-main">Éliminé — ${cupRoundLabel(cup.rounds[st.roundIdx].matches.length)}</div>
+        <div class="hero-card-sub">${home.name} ${st.match.homeGoals} - ${st.match.awayGoals} ${away.name}${st.match.penalties ? " (tab)" : ""}</div></div>`;
     }
+    if (st.state === "scheduled") {
+      const home = getClub(st.match.home), away = getClub(st.match.away);
+      const opp = home.id === club.id ? away : home;
+      return `<div class="hero-card" style="border-left-color:var(--brass);"><div class="hero-card-title">${label}</div><div class="hero-card-main">${cupRoundLabel(cup.rounds[st.roundIdx].matches.length)}</div>
+        <div class="hero-card-sub">${home.id === club.id ? "🏠" : "✈️"} vs ${opp.name} — ${fmtDate(new Date(cup.rounds[st.roundIdx].date))}</div></div>`;
+    }
+    return `<div class="hero-card"><div class="hero-card-title">${label}</div><div class="hero-card-main">Qualifié</div><div class="hero-card-sub">En attente du tirage du tour suivant</div></div>`;
+  }
+
+  function renderBracket(cup) {
+    if (!cup) return "";
     const round = cup.rounds[cup.rounds.length - 1];
     const label = cupRoundLabel(round.matches.length);
-    const involvesUser = round.matches.some(m => m.home === club.id || m.away === club.id);
     return `
-      <p class="hint">Tour en cours : ${label} — ${fmtDate(new Date(round.date))}</p>
+      <p class="hint">Tour en cours : ${label} — ${fmtDate(new Date(round.date))}${cup.champion ? ` · Vainqueur : ${getClub(cup.champion).name}` : ""}</p>
       <div class="fixture-list">
         ${round.matches.map(m => {
           const home = getClub(m.home), away = getClub(m.away);
           if (!home || !away) return "";
           const isUser = home.id === club.id || away.id === club.id;
-          const score = m.played ? `${m.homeGoals} - ${m.awayGoals}${m.winner === m.home ? " (V)" : m.winner === m.away ? "" : ""}` : "à jouer";
-          return `<div class="fixture-row ${isUser ? "me-row" : ""}">${home.name} ${score} ${away.name}</div>`;
+          const score = m.played ? `${m.homeGoals} - ${m.awayGoals}` : "à jouer";
+          return `<div class="fixture-row ${isUser ? "me-row" : ""}">${clubLogoSvg(home)} <span style="margin:0 6px;">${home.name}</span> <strong>${score}</strong> <span style="margin:0 6px;">${away.name}</span> ${clubLogoSvg(away)}</div>`;
         }).join("")}
-      </div>
-    `;
+      </div>`;
   }
 
   return `
-    <h2 class="panel-title">Coupes</h2>
-    <h3 class="panel-subtitle">${nationalCup ? nationalCup.label : "Coupe Nationale"}</h3>
-    ${renderCupBlock(nationalCup)}
-    <h3 class="panel-subtitle">Coupe Continentale</h3>
-    ${renderCupBlock(continentalCup)}
+    <h2 class="panel-title">Compétitions — ${club.name}</h2>
+    <p class="hint">Toutes les compétitions dans lesquelles votre club est engagé cette saison.</p>
+    <div class="overview-hero" style="grid-template-columns:repeat(3,1fr);">
+      <div class="hero-card" style="border-left-color:var(--brass);">
+        <div class="hero-card-title">${league.name}</div>
+        <div class="hero-card-main">${rank}${rank === 1 ? "re" : "e"} place</div>
+        <div class="hero-card-sub">${club.played} matchs · ${club.points} pts</div>
+      </div>
+      ${cupStatusCard(nationalCup ? nationalCup.label : "Coupe Nationale", nationalCup)}
+      ${cupStatusCard("Coupe Continentale", continentalCup)}
+    </div>
+
+    <h3 class="panel-subtitle">${league.name} — classement complet</h3>
+    <div class="table-scroll"><table class="squad-table standings">
+      <thead><tr><th>#</th><th>Club</th><th>J</th><th>V</th><th>N</th><th>D</th><th>BP</th><th>BC</th><th>Pts</th></tr></thead>
+      <tbody>
+        ${standings.map((c, i) => `<tr class="${c.id === club.id ? "me" : ""}"><td>${i + 1}</td><td>${clubLogoSvg(c)} ${c.name}</td><td>${c.played}</td><td>${c.won}</td><td>${c.draw}</td><td>${c.lost}</td><td>${c.gf}</td><td>${c.ga}</td><td>${c.points}</td></tr>`).join("")}
+      </tbody>
+    </table></div>
+
+    ${nationalCup ? `<h3 class="panel-subtitle">${nationalCup.label}</h3>${renderBracket(nationalCup)}` : ""}
+    ${continentalCup ? `<h3 class="panel-subtitle">Coupe Continentale</h3>${renderBracket(continentalCup)}` : ""}
   `;
 }
 
@@ -982,8 +973,8 @@ function renderClubTab() {
 }
 
 function renderInbox() {
-  const pendingOffers = state.inbox.filter(o => !o.resolved && o.type !== "job_offer");
-  const resolvedOffers = state.inbox.filter(o => o.resolved && o.type !== "job_offer").slice(0, 8);
+  const pendingOffers = state.inbox.filter(o => !o.resolved && o.type !== "job_offer" && o.type !== "player_event");
+  const resolvedOffers = state.inbox.filter(o => o.resolved && o.type !== "job_offer" && o.type !== "player_event").slice(0, 8);
   const pendingJobs = state.inbox.filter(o => !o.resolved && o.type === "job_offer");
   return `
     <h2 class="panel-title">Boîte de réception</h2>
@@ -1010,6 +1001,8 @@ function renderInbox() {
         }).join("")}
       </div>
     ` : ""}
+
+    ${renderPlayerEventsSection()}
 
     <h3 class="panel-subtitle">Offres reçues pour vos joueurs listés</h3>
     ${pendingOffers.length ? `
@@ -1065,6 +1058,9 @@ function renderFinance() {
       <div class="stat-block"><span class="stat-num">${club.sponsorContract ? fmtMoney(club.sponsorContract.amount) : fmtMoney(club.sponsorIncome)}</span><span class="stat-label">Sponsoring / mois</span></div>
       <div class="stat-block"><span class="stat-num">${fmtMoney(club.wageBill)}</span><span class="stat-label">Salaires / mois</span></div>
       <div class="stat-block"><span class="stat-num">${fmtMoney(club.wageBudgetMonthly)}</span><span class="stat-label">Plafond salarial</span></div>
+      <div class="stat-block"><span class="stat-num">${fmtMoney(getTransferBudget(club))}</span><span class="stat-label">Budget de transferts</span></div>
+      <div class="stat-block"><span class="stat-num">${fmtMoney(wageBudgetRemaining(club))}</span><span class="stat-label">Marge salariale / mois</span></div>
+      <div class="stat-block"><span class="stat-num">${fmtMoney(staffWageBill(club))}</span><span class="stat-label">Staff / mois</span></div>
       <div class="stat-block"><span class="stat-num ${totalDebt > 0 ? "result-bad" : ""}">${fmtMoney(totalDebt)}</span><span class="stat-label">Dette bancaire</span></div>
     </div>
 
@@ -1085,26 +1081,20 @@ function renderFinance() {
       ` : `<p class="hint">Pas de nouvelle offre pour l'instant — revenez à l'échéance du contrat.</p>`}
     </div>
 
-    <h3 class="panel-subtitle">Emprunt bancaire</h3>
-    <div class="dossier">
-      ${(club.loans || []).length ? `
+    ${(club.loans || []).length ? `
+      <h3 class="panel-subtitle">Emprunt en cours</h3>
+      <div class="dossier">
         <table class="squad-table">
           <thead><tr><th>Capital initial</th><th>Restant dû</th><th>Mensualité</th><th>Mois restants</th></tr></thead>
           <tbody>
             ${club.loans.map(l => `<tr><td>${fmtMoney(l.principal)}</td><td>${fmtMoney(l.remaining)}</td><td>${fmtMoney(l.monthlyPayment)}</td><td>${l.monthsLeft}</td></tr>`).join("")}
           </tbody>
         </table>
-      ` : `<p class="hint" style="margin-top:0;">Aucun emprunt en cours.</p>`}
-      <p class="hint">Plafond d'endettement : ${fmtMoney(maxLoanAmount(club))} (taux fixe 7%/an).</p>
-      <div style="display:flex;gap:8px;align-items:end;flex-wrap:wrap;">
-        <label class="field" style="margin:0;"><span>Montant</span><input type="number" id="loan-amount" value="1000000" step="100000" style="width:160px;" /></label>
-        <label class="field" style="margin:0;"><span>Durée (mois)</span>
-          <select id="loan-months"><option value="12">12</option><option value="24" selected>24</option><option value="36">36</option><option value="48">48</option></select>
-        </label>
-        <button class="btn btn-primary btn-small" id="take-loan">Emprunter</button>
+        <p class="hint" style="margin:8px 0 0;">Contracté par la présidence du club ; vous ne gérez pas ces emprunts en tant que directeur sportif, mais leurs mensualités pèsent sur la trésorerie.</p>
       </div>
-      <p class="hint" id="loan-result" style="margin:8px 0 0;"></p>
-    </div>
+    ` : `<p class="hint">Les emprunts bancaires relèvent de la présidence du club, pas du directeur sportif : vous ne pouvez pas en contracter depuis cet écran.</p>`}
+
+    <div class="overview-grid">
       <div class="stat-block"><span class="stat-num">${(club.stadiumCapacity || 0).toLocaleString("fr-FR")}</span><span class="stat-label">Capacité du stade</span></div>
       <div class="stat-block"><span class="stat-num">${club.lastAttendance ? club.lastAttendance.toLocaleString("fr-FR") : "—"}</span><span class="stat-label">Dernière affluence estimée</span></div>
       <div class="stat-block"><span class="stat-num">${club.trainingCenterLevel || 1}/5</span><span class="stat-label">Niveau du centre de formation</span></div>
@@ -1132,7 +1122,7 @@ function renderFinance() {
     </div>
     <h3 class="panel-subtitle">Historique mensuel</h3>
     <table class="squad-table">
-      <thead><tr><th>Mois</th><th>Sponsoring</th><th>Billetterie</th><th>Merchandising</th><th>Droits TV</th><th>Salaires</th><th>Transferts (net)</th><th>Solde</th><th>Trésorerie après</th></tr></thead>
+      <thead><tr><th>Mois</th><th>Sponsoring</th><th>Billetterie</th><th>Merchandising</th><th>Droits TV</th><th>Salaires</th><th>Staff</th><th>Transferts (net)</th><th>Solde</th><th>Trésorerie après</th></tr></thead>
       <tbody>
         ${club.financeHistory.map(h => `
           <tr>
@@ -1142,11 +1132,12 @@ function renderFinance() {
             <td>${fmtMoney(h.merchandising || 0)}</td>
             <td>${fmtMoney(h.tvRights || 0)}</td>
             <td>${fmtMoney(h.wages)}</td>
+            <td>${fmtMoney(h.staffWages || 0)}</td>
             <td class="${h.transfersNet >= 0 ? "result-good" : "result-bad"}">${fmtMoney(h.transfersNet)}</td>
             <td class="${h.balanceChange >= 0 ? "result-good" : "result-bad"}">${fmtMoney(h.balanceChange)}</td>
             <td>${fmtMoney(h.budgetAfter)}</td>
           </tr>
-        `).join("") || `<tr><td colspan="9" class="hint">Pas encore de bilan mensuel.</td></tr>`}
+        `).join("") || `<tr><td colspan="10" class="hint">Pas encore de bilan mensuel.</td></tr>`}
       </tbody>
     </table>
     <p class="hint">Les primes de coupes apparaissent désormais dans les droits TV du mois où elles sont perçues (revenus "autres" fusionnés).</p>
@@ -1233,18 +1224,6 @@ function attachTabHandlers() {
       attachTabHandlers();
     };
   });
-  const takeLoanBtn = document.getElementById("take-loan");
-  if (takeLoanBtn) takeLoanBtn.onclick = () => {
-    const club = userClub();
-    const amount = parseInt(document.getElementById("loan-amount").value, 10) || 0;
-    const months = parseInt(document.getElementById("loan-months").value, 10) || 24;
-    const res = takeLoan(club.id, amount, months);
-    const box = document.getElementById("loan-result");
-    box.textContent = res.ok ? `Emprunt accordé : ${fmtMoney(amount)}.` : `Refusé : le plafond d'endettement (${fmtMoney(res.cap || 0)}) serait dépassé.`;
-    box.className = res.ok ? "hint result-good" : "hint result-bad";
-    saveGame();
-    if (res.ok) { document.getElementById("tab-content").innerHTML = renderFinance(); attachTabHandlers(); }
-  };
   if (searchInput) {
     searchInput.oninput = () => { ui.searchQuery = searchInput.value; render(); searchInput.focus(); searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length); };
     document.querySelectorAll("[data-searchplayer]").forEach(btn => {
@@ -1253,7 +1232,7 @@ function attachTabHandlers() {
     document.querySelectorAll("[data-searchclub]").forEach(btn => {
       btn.onclick = () => {
         const c = getClub(parseInt(btn.dataset.searchclub, 10));
-        if (c) { ui.standingsCountry = c.countryKey; ui.standingsDiv = "d" + c.division; ui.tab = "calendar"; ui.searchQuery = ""; }
+        if (c) { ui.standingsCountry = c.countryKey; ui.standingsDiv = clubLeagueKey(c); ui.tab = "calendar"; ui.searchQuery = ""; }
         render();
       };
     });
@@ -1361,6 +1340,7 @@ function attachTabHandlers() {
       saveGame(); render();
     };
   });
+  attachRecruitHandlers();
 }
 
 // ---------------------------------------------------------------
@@ -1424,26 +1404,18 @@ const ATTR_CATEGORIES = {
   "Gardien": ["reflexes", "relance"]
 };
 
-function starsHtml(value5) {
-  const full = Math.floor(value5);
-  const half = value5 - full >= 0.5;
-  let html = "";
-  for (let i = 0; i < 5; i++) {
-    if (i < full) html += "★";
-    else if (i === full && half) html += "⯨";
-    else html += "☆";
-  }
-  return `<span style="color:var(--brass);letter-spacing:1px;">${html}</span>`;
-}
-
 function openPlayerCard(playerId) {
   const p = getPlayer(playerId);
   if (!p) return;
   let modal = document.getElementById("player-modal");
   if (!modal) return;
   const club = getClub(p.clubId);
-  const scouted = scoutedAttributes(p);
   const st = p.seasonStats || { matches: 0, goals: 0, assists: 0 };
+  const own = !!(club && isUserClub(club.id));
+  const pk = own ? 100 : knowledgeOfPlayerForUser(p);
+  const scouted = scoutedAttributes(p, pk);
+  const sview = playerStarView(p, pk);
+  const exactNums = own || pk >= 90;
 
   const categoryBlocks = Object.entries(ATTR_CATEGORIES).map(([label, keys]) => {
     const rows = keys.filter(k => scouted[k]).map(k => {
@@ -1471,10 +1443,10 @@ function openPlayerCard(playerId) {
           </div>
         </div>
         <div class="overview-grid" style="margin-bottom:14px;">
-          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${starsHtml(overallStars(p.overall))}</span><span class="stat-label">Niveau actuel (${p.overall})</span></div>
-          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${starsHtml(overallStars(p.potential))}</span><span class="stat-label">Potentiel (${p.potential})</span></div>
-          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${p.morale || 60}%</span><span class="stat-label">Moral</span></div>
-          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${p.fatigue || 0}%</span><span class="stat-label">Fatigue</span></div>
+          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${starsPair(sview)}</span><span class="stat-label">Niveau / potentiel${exactNums ? ` (${p.overall} / ${p.potential})` : ""}</span></div>
+          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${knowledgeBadge(pk)}</span><span class="stat-label">Connaissance du joueur</span></div>
+          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${own ? (p.morale || 60) + "%" : "?"}</span><span class="stat-label">Moral</span></div>
+          <div class="stat-block"><span class="stat-num" style="font-size:16px;">${own ? (p.fatigue || 0) + "%" : "?"}</span><span class="stat-label">Fatigue</span></div>
         </div>
         <div class="overview-grid" style="margin-bottom:18px;">
           <div class="stat-block"><span class="stat-num" style="font-size:16px;">${club ? club.name : "Libre"}</span><span class="stat-label">Club</span></div>
@@ -1600,7 +1572,7 @@ function openScoutReport(playerId) {
     <div class="modal-backdrop">
       <div class="modal dossier">
         <h3>Rapport de scouting — ${p.firstName} ${p.lastName}</h3>
-        <p class="hint">${p.position} · ${p.age} ans · ${p.nationality} · Global ${p.overall} · Potentiel ${p.potential}</p>
+        <p class="hint">${p.position} · ${p.age} ans · ${p.nationality} · ${starsPair(playerStarView(p, knowledgeOfPlayerForUser(p)))} · connaissance ${Math.round(knowledgeOfPlayerForUser(p))}%</p>
         ${Object.entries(scouted).map(([k, v]) => `
           <div class="wage-bar-wrap">
             <div class="wage-bar-label">${attrLabel(k)} — ${v.value}${v.approx ? " (approx.)" : ""} / 20</div>
@@ -1746,8 +1718,8 @@ function openNegotiation(playerId) {
     document.getElementById("send-offer").onclick = () => {
       const amount = parseInt(document.getElementById("offer-amount").value, 10);
       const club = userClub();
-      if (amount > club.budget) {
-        renderFeeStep(amount, `Budget insuffisant pour cette offre (trésorerie : ${fmtMoney(club.budget)}).`);
+      if (amount > getTransferBudget(club)) {
+        renderFeeStep(amount, `Au-delà de votre budget de transferts (${fmtMoney(getTransferBudget(club))}), calculé d'après vos finances.`);
         return;
       }
       const res = evaluateOffer(p, amount, true);
@@ -1815,8 +1787,8 @@ function openNegotiation(playerId) {
       const bonusOffer = parseInt(document.getElementById("bonus-offer").value, 10) || 0;
       const resultBox = document.getElementById("contract-result");
 
-      if (neg.agreedFee + bonusOffer + commission > club.budget) {
-        resultBox.innerHTML = `<p class="result-bad">Trésorerie insuffisante pour couvrir le transfert, la prime et la commission de l'agent.</p>`;
+      if (neg.agreedFee + bonusOffer + commission > getTransferBudget(club) && !neg.viaClause) {
+        resultBox.innerHTML = `<p class="result-bad">Budget de transferts insuffisant (${fmtMoney(getTransferBudget(club))}) pour couvrir le transfert, la prime et la commission de l'agent.</p>`;
         return;
       }
       if (!canAffordWage(club, wageOffer)) {
