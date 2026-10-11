@@ -1,0 +1,12 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  parcours:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: for f in js/*.js; do node --check "$f"; done
+      - run: pip install playwright && playwright install --with-deps chromium
+      - run: python3 tests/run_tests.py
