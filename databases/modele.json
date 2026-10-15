@@ -1,0 +1,7281 @@
+{
+ "format": "ds-pack",
+ "version": 1,
+ "name": "Ma base de données",
+ "author": "",
+ "aide": "Pour chaque club : « match » = nom actuel dans le jeu (ne pas modifier). Remplissez « name » (vrai nom), « logo » (nom d'un fichier image importé, ou chemin logos/xxx.png, ou URL), « color » (#RRGGBB), « stadium ». « players » : liste facultative [{\"first\":\"\",\"last\":\"\",\"pos\":\"GB|DEF|MIL|ATT\",\"age\":25,\"nationality\":\"\",\"overall\":70}]. Supprimez les clubs que vous ne modifiez pas.",
+ "clubs": [
+  {
+   "match": "Paris Saint-Germain",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Olympique de Marseille",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Monaco",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Olympique Lyonnais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "LOSC Lille",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "OGC Nice",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RC Lens",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RC Strasbourg Alsace",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Rennais FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Toulouse FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Brestois 29",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Angers SCO",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Le Havre AC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AJ Auxerre",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Nantes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Metz",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Paris FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Lorient",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Manchester City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Arsenal",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Liverpool",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Manchester United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chelsea",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tottenham Hotspur",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Newcastle United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Aston Villa",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Brighton & Hove Albion",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Crystal Palace",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Everton",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fulham",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Brentford",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nottingham Forest",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AFC Bournemouth",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Leeds United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ipswich Town",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sunderland",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hull City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Coventry City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Madrid",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Barcelone",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlético Madrid",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Athletic Bilbao",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Villarreal CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Betis",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Séville FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Sociedad",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Valence CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RC Celta de Vigo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rayo Vallecano",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CA Osasuna",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RCD Majorque",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Getafe CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Deportivo Alavés",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RCD Espanyol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Girona FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Levante UD",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Elche CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Oviedo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SSC Naples",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Inter Milan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AC Milan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Juventus Turin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atalanta Bergame",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Rome",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lazio Rome",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fiorentina",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bologne FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Torino FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Udinese",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Genoa CFC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cagliari Calcio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hellas Vérone",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Lecce",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Parme Calcio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Côme 1907",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sassuolo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pise SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Cremonese",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bayern Munich",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bayer Leverkusen",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Borussia Dortmund",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RB Leipzig",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Eintracht Francfort",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "VfB Stuttgart",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Fribourg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "VfL Wolfsburg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Borussia Mönchengladbach",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Werder Brême",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Augsbourg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "1. FSV Mayence 05",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "TSG Hoffenheim",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "1. FC Union Berlin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC St. Pauli",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "1. FC Heidenheim",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Cologne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hambourg SV",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Club Bruges",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RSC Anderlecht",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Royale Union Saint-Gilloise",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KRC Genk",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Antwerp FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KAA La Gantoise",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cercle Bruges",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Standard de Liège",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KV Malines",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Westerlo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "OH Louvain",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Charleroi",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sint-Truiden",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KVC Dender",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Beerschot",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kortrijk",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "BSC Young Boys",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Bâle",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Lugano",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Servette FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Zurich",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Saint-Gall",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Lucerne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Grasshopper Zurich",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Winterthour",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Yverdon Sport",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Sion",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lausanne-Sport",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Galatasaray",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fenerbahçe",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Beşiktaş",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Trabzonspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "İstanbul Başakşehir",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Konyaspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kayserispor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Antalyaspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gaziantep FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Samsunspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bodø/Glimt",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Molde FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rosenborg BK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vålerenga",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SK Brann",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Viking FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lillestrøm SK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Odds BK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sarpsborg 08",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tromsø IL",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KR Reykjavik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Valur",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FH Hafnarfjörður",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Breiðablik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Víkingur Reykjavik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stjarnan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ÍA Akranes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "KA Akureyri",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fram Reykjavik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vestri",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shamrock Rovers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shelbourne FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "St Patrick's Athletic",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Derry City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bohemian FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Drogheda United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dundalk FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sligo Rovers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Galway United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Waterford FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Linfield FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Glentoran",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Crusaders FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cliftonville",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Larne FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Coleraine FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Glenavon",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Portadown",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ballymena United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Newry City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FCSB",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CFR Cluj",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Universitatea Craiova",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rapid Bucarest",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sepsi OSK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Farul Constanța",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Universitatea Cluj",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Botoșani",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Petrolul Ploiești",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "UTA Arad",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dinamo Bucarest",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Hermannstadt",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Oțelul Galați",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Voluntari",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Poli Iași",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Unirea Slobozia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lech Poznań",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Legia Varsovie",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Raków Częstochowa",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Jagiellonia Białystok",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pogoń Szczecin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Górnik Zabrze",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Widzew Łódź",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cracovia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Wisła Cracovie",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Piast Gliwice",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Malmö FF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AIK Solna",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Djurgårdens IF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hammarby IF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "IFK Göteborg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "BK Häcken",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "IF Elfsborg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kalmar FF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "IFK Norrköping",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mjällby AIF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sheriff Tiraspol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Zimbru Chișinău",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Milsami Orhei",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Petrocub Hîncești",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dacia Buiucani",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sfântul Gheorghe",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Speranța Nisporeni",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Politehnica UTM",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Florești",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bălți SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shanghai Port",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shanghai Shenhua",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Beijing Guoan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shandong Taishan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Zhejiang FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chengdu Rongcheng",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Wuhan Three Towns",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tianjin Jinmen Tiger",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Qingdao Hainiu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Meizhou Hakka",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ulsan HD",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pohang Steelers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gwangju FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Seoul",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Suwon FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Daegu FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Daejeon Hana Citizen",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gimcheon Sangmu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Jeonbuk Hyundai Motors",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Incheon United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Melbourne City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Central Coast Mariners",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Melbourne Victory",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Western United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sydney FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Wellington Phoenix",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Western Sydney Wanderers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Adelaide United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Macarthur FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Brisbane Roar",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Newcastle Jets",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Perth Glory",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Inter Miami CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "LA Galaxy",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "LAFC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Columbus Crew",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Cincinnati",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Seattle Sounders",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Philadelphia Union",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "New York City FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "New York Red Bulls",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlanta United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Portland Timbers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Salt Lake",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Orlando City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nashville SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Minnesota United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Austin FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sporting Kansas City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Houston Dynamo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chicago Fire",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Toronto FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Club América",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chivas Guadalajara",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cruz Azul",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pumas UNAM",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CF Monterrey",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tigres UANL",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Deportivo Toluca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Club León",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Santos Laguna",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CF Pachuca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlas FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Club Necaxa",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Puebla FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Xolos Tijuana",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mazatlán FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Querétaro FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Juárez",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlético San Luis",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "River Plate",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Boca Juniors",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Racing Club",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Independiente",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "San Lorenzo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vélez Sarsfield",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Estudiantes La Plata",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Talleres Córdoba",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rosario Central",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Newell's Old Boys",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lanús",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Argentinos Juniors",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Huracán",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Defensa y Justicia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Godoy Cruz",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Belgrano",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Instituto",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Banfield",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Platense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tigre",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Flamengo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Palmeiras",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Botafogo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "São Paulo FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fluminense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Internacional",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Grêmio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Corinthians",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cruzeiro",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlético Mineiro",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vasco da Gama",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bahia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fortaleza",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Athletico Paranaense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Red Bull Bragantino",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Santos FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vitória",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Juventude",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Criciúma",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cuiabá",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sporting CP",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SL Benfica",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Porto",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Braga",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vitória Guimarães",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Moreirense FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Santa Clara",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Famalicão",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Casa Pia AC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rio Ave FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Estoril Praia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CD Nacional",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gil Vicente FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CF Estrela Amadora",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AVS",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Arouca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tondela",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Boavista",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vissel Kobe",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sanfrecce Hiroshima",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Machida Zelvia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gamba Osaka",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kashima Antlers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cerezo Osaka",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tokyo Verdy",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kawasaki Frontale",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Tokyo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Avispa Fukuoka",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Urawa Reds",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nagoya Grampus",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Yokohama F. Marinos",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kyoto Sanga",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shonan Bellmare",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Albirex Niigata",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Júbilo Iwata",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kashiwa Reysol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Consadole Sapporo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shimizu S-Pulse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ESTAC Troyes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Lavallois",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Amiens SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "EA Guingamp",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Boulogne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pau FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Bastia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Annecy",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Clermont Foot 63",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Grenoble Foot 38",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rodez AF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Red Star FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "USL Dunkerque",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Martigues",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AC Ajaccio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SM Caen",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nîmes Olympique",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Le Mans FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Saragosse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sporting Gijón",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Racing Santander",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Valladolid",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "UD Las Palmas",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cádiz CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CD Leganés",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SD Huesca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Albacete Balompié",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Málaga CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Deportivo La Corogne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Burgos CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CD Castellón",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Granada CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Almería",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Eibar",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mirandés",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Córdoba CF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sampdoria",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Spezia Calcio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Venise FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Palerme FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bari",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Brescia Calcio",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Empoli FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Frosinone",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Modène FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Reggiana",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Salernitana",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Catanzaro",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cesena",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Juve Stabia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Südtirol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Carrarese",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mantoue",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Avellino",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Schalke 04",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hertha Berlin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fortuna Düsseldorf",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hanovre 96",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Karlsruher SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Paderborn",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Holstein Kiel",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "1. FC Nuremberg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SV Darmstadt 98",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "VfL Bochum",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Eintracht Brunswick",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Greuther Fürth",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SV Elversberg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Preußen Münster",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Arminia Bielefeld",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dynamo Dresde",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "VfL Osnabrück",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "MSV Duisbourg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Adana Demirspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bodrumspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "MKE Ankaragücü",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Boluspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "BB Erzurumspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Manisa FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sakaryaspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pendikspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Keçiörengücü",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bandırmaspor",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sandefjord Fotball",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Åsane Fotball",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sogndal Fotball",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kongsvinger IL",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ranheim Fotball",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bryne FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Raufoss IL",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mjøndalen IF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Skeid Fotball",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fredrikstad FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Þróttur Reykjavik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Grótta",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Keflavík",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fjölnir",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "HK Kópavogur",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Leiknir Reykjavik",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Selfoss",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Afturelding",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Njarðvík",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ÍBV Vestmannaeyjar",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cork City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "UCD AFC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cobh Ramblers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Athlone Town",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Longford Town",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bray Wanderers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Wexford FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Treaty United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kerry FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Finn Harps",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dungannon Swifts",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Carrick Rangers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ards FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Loughgall",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Annagh United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Institute FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ballinamallard United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Newington FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bangor FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Knockbreda FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "GKS Katowice",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Zagłębie Sosnowiec",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Motor Lublin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Arka Gdynia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chrobry Głogów",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Odra Opole",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stal Mielec",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Polonia Varsovie",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ŁKS Łódź",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Znicz Pruszków",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "GAIS Göteborg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Örebro SK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Halmstads BK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Degerfors IF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sandvikens IF",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Landskrona BoIS",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Utsiktens BK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Östersunds FK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Varbergs BoIS",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "IK Brage",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Nistru Otaci",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Real Succes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dinamo-Auto Tiraspol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Codru Lozova",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Victoria Bardar",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Ungheni",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Recolta Cuizauca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CSF Speranța Drăsliceni",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cahul-2005",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Costuleni",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dalian Yingbo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nantong Zhiyun",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Yanbian Longding",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sichuan Jiuniu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Guangxi Pingguo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Suzhou Dongwu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Heilongjiang Ice City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Qingdao West Coast",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Zibo Cuju",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shenzhen Peng City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Anyang FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bucheon FC 1995",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cheonan City",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ansan Greeners",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gimpo Citizen",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Seoul E-Land",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hwaseong FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chungnam Asan",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gyeongnam FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Jeonnam Dragons",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sydney United 58",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sydney Olympic",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Marconi Stallions",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "South Melbourne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Heidelberg United",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Green Gully SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Avondale FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Oakleigh Cannons",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "APIA Leichhardt",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Wollongong Wolves",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Broadmeadow Magic",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gold Coast Knights",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mineros de Zacatecas",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Correcaminos UAT",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlético Morelia",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Alebrijes de Oaxaca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tepatitlán FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cancún FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tampico Madero",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Leones Negros",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dorados de Sinaloa",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Yucatán FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Celaya FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tlaxcala FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Penafiel",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "UD Oliveirense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Farense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Académico Viseu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Leixões SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CD Feirense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Portimonense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Marítimo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chaves",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Torreense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vizela",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Paços de Ferreira",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "União de Leiria",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Alverca",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Felgueiras",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lank Vilaverdense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Shimizu S-Pulse II",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "V-Varen Nagasaki",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Yokohama FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vegalta Sendai",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "JEF United Chiba",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Montedio Yamagata",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mito HollyHock",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fagiano Okayama",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ventforet Kofu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Roasso Kumamoto",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tokushima Vortis",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Renofa Yamaguchi",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Oita Trinita",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Blaublitz Akita",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Iwaki FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ehime FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sagan Tosu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Omiya Ardija",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Fujieda MYFC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Kataller Toyama",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Steaua Bucarest",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CSM Reșița",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Concordia Chiajna",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Metaloglobus",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gloria Buzău",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Corvinul Hunedoara",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CS Tunari",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Unirea Dej",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Progresul Spartac",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dumbrăvița",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CSM Slatina",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ASA Târgu Mureș",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Afumați",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Câmpulung Muscel",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bihor Oradea",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Șelimbăr",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Santa Cruz",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Náutico",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sport Recife",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ceará SC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Goiás",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "América Mineiro",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chapecoense",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Coritiba",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Avaí",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Paysandu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Remo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ponte Preta",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Guarani",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Novorizontino",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mirassol",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Operário Ferroviário",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Botafogo-SP",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Amazonas FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vila Nova",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "CRB",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Aarau",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Neuchâtel Xamax",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Thoune",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Vaduz",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Schaffhouse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Wil",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Nyonnais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Étoile Carouge",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SC Bellinzone",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Bienne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lommel SK",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RWD Molenbeek",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Lierse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Zulte Waregem",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Beveren",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RFC Liège",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Seraing",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Patro Eisden",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Francs Borains",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "La Louvière",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Club NXT",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Jong Genk",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Louisville City FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Indy Eleven",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sacramento Republic",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Phoenix Rising",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "San Antonio FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Tampa Bay Rowdies",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Pittsburgh Riverhounds",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Birmingham Legion",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Memphis 901",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "El Paso Locomotive",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Colorado Springs Switchbacks",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Detroit City FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Charleston Battery",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "North Carolina FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Rhode Island FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hartford Athletic",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Oakland Roots",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Monterey Bay FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chacarita Juniors",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Ferro Carril Oeste",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Atlanta",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nueva Chicago",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "All Boys",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Colón Santa Fe",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Gimnasia Mendoza",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "San Martín Tucumán",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Almirante Brown",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Quilmes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Estudiantes Río Cuarto",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Temperley",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Deportivo Morón",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Los Andes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Defensores de Belgrano",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Deportivo Maipú",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Agropecuario",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "San Telmo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Aubagne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Sarrebourg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bourg-Péronnas",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Concarneau",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dijon FCO",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Fleury 91",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Le Puy Foot 43",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Paris 13 Atletico",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Quevilly-Rouen Métropole",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Rouen 1899",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Sochaux-Montbéliard",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Briochin",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Valenciennes FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Versailles 78",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Villefranche Beaujolais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Chamois Niortais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "LB Châteauroux",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Nancy Lorraine",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Saint-Malo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vendée Les Herbiers Football",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Girondins de Bordeaux",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Blois Foot 41",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "La Roche Vendée Football",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Avranches Mont-Saint-Michel",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Saint-Colomban Locminé",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bourges Foot 18",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Dinan-Léhon FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Saint-Pryvé Saint-Hilaire FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Voltigeurs de Châteaubriant",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Poitevin FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Aviron Bayonnais FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Chauray",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Olympique Saumur",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Montlouis",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC 93 Bobigny",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Thionville Lusitanos",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Chambly Oise",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Créteil-Lusitanos",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ASC Biesheim",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Furiani-Agliani",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Beauvais Oise",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Entente Feignies-Aulnoye",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Chantilly",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Balagne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SAS Épinal",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FCSR Haguenau",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Dieppe",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Mulhouse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Racing Club de Strasbourg B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Terville Florange OS",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Le Puy Foot 43 B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Cannes B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Istres B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Colomiers",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Racing Besançon B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Jura Sud Foot",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "GOAL FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Espaly Foot",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Montois",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Olympique Choletais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Moulins",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Louhans-Cuiseaux",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bourgoin-Jallieu",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Andrézieux B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Trélissac FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sète FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Cannes",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hyères FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sporting Club Toulon",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "RC Pays de Grasse",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Angoulême Charente FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Saint-Priest",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Andrézieux-Bouthéon FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Étoile Fréjus Saint-Raphaël",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "GFA Rumilly-Vallières",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Istres FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Marignane Gignac Côte Bleue FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Bergerac Périgord FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Limonest Dardilly Saint-Didier",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Rousset Sainte-Victoire",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Borgo",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Lusitanos Saint-Maur",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Moulins B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Grenoble Foot 38 B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Martigues B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Albi",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Montois B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Toulouse Rodéo FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Mios Biganos",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Bordelais",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Granville",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Cherbourg FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Malherbe Caen B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Entente SSG",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Lorient B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Stade Rennais B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Vannes OC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "GSI Pontivy",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Saint-Lô Manche",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "AS Vitré",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "US Pacéenne",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Avranches B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Metz B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Nancy B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Mulhouse B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Colmar",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Schiltigheim FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Racing Vauban Strasbourg",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "SR Saint-Dié",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "ASPTT Thionville",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Sarreguemines FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Hagondange FC",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "FC Sarrebourg B",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  },
+  {
+   "match": "Thaon-les-Vosges",
+   "name": "",
+   "short": "",
+   "logo": "",
+   "color": "",
+   "stadium": "",
+   "players": []
+  }
+ ]
+}
